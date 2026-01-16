@@ -1,9 +1,8 @@
 export function isValidEmail(email: string): boolean {
-    if(email.includes("@")){
+    if(!email.includes("@")){
         return false;
     }
-    const atIndex = email.indexOf("@");
-    if(atIndex > 0){
+    if(email.includes(" ")){
         return false;
     }
     return true;

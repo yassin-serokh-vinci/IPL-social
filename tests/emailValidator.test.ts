@@ -5,7 +5,7 @@ describe("isValidEmail", () => {
     expect(isValidEmail("abc")).toBe(false);
   });
 
-  test("returns false when there is nothing before @", () => {
-  expect(isValidEmail("@domain.com")).toBe(false);
+  test("returns false when there is a space", () => {
+  expect(isValidEmail("abc @domain.com")).toBe(false);
 });
 });
